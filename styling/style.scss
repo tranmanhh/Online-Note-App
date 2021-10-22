@@ -1,0 +1,79 @@
+/*style the index page*/
+//background image
+body{
+    background: url("images/bg-img.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+//style landing page and jumbotron
+#landingPage{
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    h1{
+        font-size: 60px;
+    }
+    button{
+        color: black;
+        margin-top: 20px;
+        opacity: 0.7;
+    }
+    button:hover, button:active{
+        opacity: 1;
+    }
+}
+.border{
+    border: 1px solid gainsboro;
+}
+.modal-body input{
+    margin-bottom: 17px;
+}
+.modal-footer{
+    width: 100%;
+}
+.register-left{
+    position: absolute;
+    left: 20px;
+}
+
+/*style the loggedin page*/
+#allnotes, #done, #notePad, .delete{
+    display: none;
+}
+.buttons{
+    margin-bottom: 20px;
+}
+#notePad textarea{
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.5em;
+    border: 1px solid pink;
+    border-left: 20px solid plum;
+    color: blueviolet;
+    padding: 10px;
+}
+
+/*style the loggedin profile page*/
+table tr{
+    cursor: pointer;
+}
+//style the notes display
+.noteBackground{
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 0 10px;
+    background: linear-gradient(azure, antiquewhite);
+    width: 100%;
+}
+.noteText{
+    font-size: 18px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.noteTime{
+    font-size: 14px;
+}
